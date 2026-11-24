@@ -21,6 +21,7 @@ app.post('/users', async (req, res) => {
 });
 
 // ---------- POST ROUTES ----------
+
 app.post('/posts', async (req, res) => {
   try {
     const post = await Post.create(req.body);
