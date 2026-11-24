@@ -31,7 +31,6 @@ app.post('/posts', async (req, res) => {
   }
 });
 
-
 app.get('/posts', async (req, res) => {
   try {
     const posts = await Post.find().populate('authorId');
