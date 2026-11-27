@@ -10,7 +10,7 @@ const User = require('./models/User');
 const app = express();
 app.use(express.json());
 
-// ---------- USER ROUTE ------
+// ---------- USER ROUTE ----------
 app.post('/users', async (req, res) => {
   try {
     const user = await User.create(req.body);
